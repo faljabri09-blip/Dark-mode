@@ -1,0 +1,121 @@
+:root:has(#toggle-btn:checked) {
+
+    --background: black;
+    --main-font-color: white;
+    --nav-bg: #171717;
+    --third-font-color: #9f9f9f;
+    --color-primary: #C17E1F;
+
+}
+
+.moon {
+    display: inline-block;
+}
+
+
+.sun {
+
+    display: none;
+}
+
+
+#toggle-btn:checked~.icons .sun {
+    display: inline-block;
+}
+
+
+
+#toggle-btn:checked~.icons .moon {
+    display: none;
+}
+
+/* nav darkmoode */
+
+
+body:has(#toggle-btn:checked) .navbar {
+
+    background-color: #171717b2 !important;
+  
+}
+
+body:has(#toggle-btn:checked) .nav-link{
+
+    color: var(--main-font-color);
+}
+
+body:has(#toggle-btn:checked) .logo h2::after {
+
+    color: var(--color-primary);
+}
+
+
+/* chefs */
+
+body:has(#toggle-btn:checked) .chefs .card {
+    background-color: var(--nav-bg);
+}
+
+body:has(#toggle-btn:checked) .chefs .card h3 {
+    color: var(--main-font-color);
+}
+
+
+body:has(#toggle-btn:checked) .sections-header span{
+
+    color: var(--color-primary);
+}
+
+body:has(#toggle-btn:checked) .sections-header h3 ,h2{
+
+
+    color: var(--main-font-color);
+}
+
+body:has(#toggle-btn:checked) .chefs .card {
+    color: var(--third-font-color);
+}
+
+body:has(#toggle-btn:checked) {
+    background-color: #292929;
+}
+
+
+/* contact darkmoode */
+
+body:has(#toggle-btn:checked) .contact .contact-record h3 {
+    color: #ADADAD;
+}
+
+body:has(#toggle-btn:checked) .contact .contact-record p {
+    color: #FFFF;
+}
+
+body:has(#toggle-btn:checked) .contact input, textarea {
+    border: var(--color-primary);
+}
+
+body:has(#toggle-btn:checked) button{
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);  
+}
+
+
+body:has(#toggle-btn:checked) .moon , .sun{
+color: var( --main-font-color);
+}
+
+
+
+body:has(#toggle-btn:checked) .contact-record{
+    background-color: var(--background);
+}
+
+
+
+body:has(#toggle-btn:checked) .contact-record .icon{
+    background-color: var( --color-primary);
+}
+
+body:has(#toggle-btn:checked) nav ul li::after{
+    background-color: var( --color-primary);
+}
